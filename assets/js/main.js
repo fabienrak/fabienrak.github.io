@@ -7,6 +7,21 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
+/*=============== BLINKING CURSOR ===============*/
+var cursor = true;
+var speed = 220;
+
+setInterval(() => {
+   if(cursor) {
+     document.getElementById('blink').style.opacity = 0;
+     cursor = false;
+   }else {
+     document.getElementById('blink').style.opacity = 1;
+     cursor = true;
+   }
+}, speed);
+
+
 /*=============== SERVICES MODAL ===============*/
 // Get the modal
 const modalViews = document.querySelectorAll(".services__modal"),

@@ -22,6 +22,9 @@
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+    <!--=============== JS ===============-->
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -32,7 +35,8 @@
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">FabienRAK</a>
+            <a href="#" class="nav__logo">root@FabienRAK:~/<span id="blink">_</span></a>
+            
 
             <div class="nav__menu">
                 <ul class="nav__list">
@@ -80,9 +84,10 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
+                    <span 
+                        class="home__greeting">Hello, I'm</span>
                     <h1 class="home__name">Fabien Rakotoarison</h1>
-                    <h3 class="home__education">Developer, System Administrator</h3>
+                    <h3 class="home__education typer" data-delay="150" data-words="Developer,System Administrator" data-colors="white"> </h3>
 
                     <div class="home__button">
                         <a download="" href="assets/pdf/hailee-Cv.pdf" class="button button--ghost">
@@ -161,6 +166,8 @@
             <h2 class="section__title">My Experience</h2>
 
             <div class="skills__container container grid">
+
+                <!-- FRONT END -->
                 <div class="skills__content">
                     <h3 class="skills__title">Frontend Development</h3>
 
@@ -183,6 +190,16 @@
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
 
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
@@ -192,40 +209,11 @@
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">React</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
-
+                
+                <!-- BACK END -->
                 <div class="skills__content">
                     <h3 class="skills__title">Backend Development</h3>
 
@@ -235,8 +223,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Node JS</h3>
-                                    <span class="skills__level">Advanced</span>
+                                    <h3 class="skills__name">JAVA</h3>
                                 </div>
                             </div>
 
@@ -245,7 +232,6 @@
 
                                 <div>
                                     <h3 class="skills__name">Python</h3>
-                                    <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
 
@@ -253,8 +239,8 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__level">Advanced</span>
+                                    <h3 class="skills__name">Framework</h3>
+                                    <span class="skills__level">Spring, Django, Codeigniter</span>
                                 </div>
                             </div>
 
@@ -273,7 +259,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Firebase</h3>
+                                    <h3 class="skills__name">architecture REST - MS</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -282,7 +268,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Mongo DB</h3>
+                                    <h3 class="skills__name">Flask</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -290,6 +276,245 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- MOBILE -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Mobile Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Java Native</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Flutter</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NETWORK -->
+                <div class="skills__content">
+                    <h3 class="skills__title">System and network</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Networks/Systems Administration</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Linux</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firewall</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Virtualisation</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">CISCO</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Monitoring</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>    
+                </div>
+
+                <!-- DEVOPS -->
+                <div class="skills__content">
+                    <h3 class="skills__title">DEVOPS</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CI - CD</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">GIT</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">DOCKER</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">JENKINS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">SONARQUBE</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Deploiement</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>    
+                </div>
+
+                <!-- OTHER SKILL -->
+                <div class="skills__content">
+                    <h3 class="skills__title">OTHER (TOOLS, TECHNO, ...)</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">EXPLOIT DEV.</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">BURPSUITE</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">SCRIPTING</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ARDUINO</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">CMS (Wordpress, Prestashop)</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">PROXMOX</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">WIRESHARK</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">NMAP</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
         </section>
 
         <!--=============== SERVICES ===============-->
@@ -485,7 +710,7 @@
             <div class="work__filters">
                 <span class="work__item active-work" data-filter='all'>All</span>
                 <span class=" work__item" data-filter='.web'>Web</span>
-                <span class=" work__item" data-filter='.movil'>Movil</span>
+                <span class=" work__item" data-filter='.movil'>Mobil</span>
                 <span class=" work__item" data-filter='.design'>Design</span>
             </div>
 
@@ -493,7 +718,7 @@
                 <div class="work__card mix web">
                     <img src="assets/img/work1.jpg" alt="" class="work__img">
 
-                    <h3 class="work__title">Web Design</h3>
+                    <h3 class="work__title">Zishan POS</h3>
 
                     <a href="#" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
@@ -503,7 +728,7 @@
                 <div class="work__card mix movil">
                     <img src="assets/img/work2.jpg" alt="" class="work__img">
 
-                    <h3 class="work__title">App Movil</h3>
+                    <h3 class="work__title">App Mobil Paositra Money</h3>
 
                     <a href="#" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
@@ -662,7 +887,7 @@
     <!--=============== FOOTER ===============-->
     <footer class="footer">
         <div class="footer__container container">
-            <h1 class="footer__title">Hailee</h1>
+            <h1 class="footer__title">FabienRAK</h1>
 
             <ul class="footer__list">
 
