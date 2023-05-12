@@ -364,6 +364,9 @@ body.light-theme {
     180deg,
     hsla(var(--first-hue), var(--sat), var(--lig), 0.5),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
+
+    /* hsla(limegreen, var(--sat), var(--lig), 0.5),
+    hsla(lime, var(--sat), var(--lig), 0.1) */
   );
 
   border-radius: 10rem 10rem 1rem 1rem;
